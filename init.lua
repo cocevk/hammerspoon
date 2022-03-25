@@ -4,7 +4,7 @@
 -- Spoons
 hs.loadSpoon('ControlEscape'):start() 
 hs.loadSpoon('ClipboardTool')
-hs.loadSpoon('AClock'):init()
+hs.loadSpoon('AClock'):init() --note: config currently in spoon
 
 -- ClipboardTool
 ct = spoon.ClipboardTool
@@ -38,7 +38,7 @@ remap({'ctrl', 'shift'}, 'l', pressFn('right'))
 -- end HJKL CURSOR MOVEMENT
 
 hs.hotkey.bind({'ctrl', 'shift'}, "i", function()
-    hs.application.launchOrFocus("Intellij IDEA CE")
+    hs.application.launchOrFocus("Intellij IDEA")
     end
 )
 
